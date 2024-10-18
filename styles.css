@@ -38,12 +38,14 @@ a.more {
   background: white !important;
   padding-top: 20px;
   padding-bottom: 20px;
+  opacity: 0; /* Start invisible */
+  transform: translateY(-20px); /* Move up */
+  animation: fadeInDown 0.5s forwards; /* Fade-in effect */
 }
 
 .custom-navbar .navbar-brand {
   color: #591ed6;
   font-size: 20px;
- 
 }
 
 .custom-navbar .navbar-toggler {
@@ -58,8 +60,7 @@ a.more {
 }
 
 .custom-navbar .custom-navbar-nav li a {
-  font-size: 20px;
-  
+  font-size: 17px;
   color: #591ed6 !important;
   transition: .3s all ease;
   position: relative;
@@ -93,6 +94,9 @@ a.more {
 .hero .intro-excerpt {
   position: relative;
   z-index: 4;
+  opacity: 0; /* Start invisible */
+  animation: fadeInUp 0.5s forwards; /* Fade-in effect */
+  animation-delay: 0.3s; /* Delay to start after navbar */
 }
 
 .hero h1 {
@@ -100,6 +104,9 @@ a.more {
   color: #591ed6;
   white-space: nowrap; /* Ensure "WE MAKE YOUR IDEA'S" stays on one line */
   margin-bottom: 30px;
+  opacity: 0; /* Start invisible */
+  animation: textReveal 0.6s forwards; /* Apply text reveal animation */
+  animation-delay: 0.5s; /* Delay for effect */
 }
 
 .hero .highlight {
@@ -118,6 +125,9 @@ a.more {
 .hero .hero-img-wrap img {
   max-width: 100%; /* Ensure it doesn't exceed its container */
   height: auto; /* Maintain aspect ratio */
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 0.5s forwards; /* Fade-in effect */
+  animation-delay: 0.7s; /* Delay to start after text */
 }
 
 @media (max-width: 576px) { /* Extra small devices (phones, <576px) */
@@ -150,12 +160,14 @@ a.more {
   color: #ffffff;
   background: #2f2f2f;
   border-color: #2f2f2f;
+  transition: transform 0.2s; /* Smooth scaling effect */
 }
 
 .btn:hover {
   color: #ffffff;
   background: #222222;
   border-color: #222222;
+  transform: scale(1.05); /* Scale button on hover */
 }
 
 .btn:active, .btn:focus {
@@ -226,3 +238,45 @@ a.more {
   }
 }
 
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Start from above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+@keyframes textReveal {
+  0% {
+    transform: translateY(20px); /* Start below */
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* Fully visible */
+  }
+}
