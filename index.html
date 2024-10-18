@@ -8,7 +8,6 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="styles.css"> -->
   <style>
     body {
       font-family: 'Poppins', sans-serif; /* Apply Poppins font */
@@ -28,6 +27,7 @@
       display: flex; /* Flexbox layout */
       align-items: center; /* Vertically center content */
       color: #591ed6; /* Text color */
+      padding-top: 100px; /* Prevent overlap with navbar */
     }
 
     /* Image Styles */
@@ -41,6 +41,19 @@
       color: gray; /* Lead text color */
       font-size: 15px; /* Font size */
       font-weight: lighter; /* Font weight */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 767px) {
+      .hero {
+        padding-top: 150px; /* More padding for mobile */
+      }
+      .hero h1 {
+        font-size: 2.5rem; /* Smaller heading */
+      }
+      .hero h4 {
+        font-size: 1.2rem; /* Smaller lead text */
+      }
     }
   </style>
 </head>
