@@ -280,3 +280,17 @@ a.more {
     opacity: 1; /* Fully visible */
   }
 }
+
+@media (max-width: 576px) { /* Extra small devices (phones, <576px) */
+  .custom-navbar .custom-navbar-nav {
+    background-color: #591ed6 !important; /* Set background color for mobile nav links */
+  }
+  
+  .custom-navbar .custom-navbar-nav li a {
+    margin-left: 15px;
+    font-weight: bold;
+    color: white !important; /* Set text color to white for mobile nav links */
+  }
+}
+
+
