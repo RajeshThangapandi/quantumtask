@@ -8,7 +8,41 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    }
+
+    #main-navbar {
+      background-color: transparent; /* Transparent background */
+      position: absolute; /* Absolute positioning for overlap */
+      top: 0; /* Align to the top */
+      width: 100%; /* Full width */
+      z-index: 1000; /* Above other content */
+    }
+
+    .hero {
+      background-color: white; /* Hero background color */
+      height: 100vh; /* Full height */
+      display: flex; /* Flexbox layout */
+      align-items: center; /* Vertically center content */
+      color: #591ed6; /* Text color */
+    }
+
+    /* Image Styles */
+    .transparent-image {
+      max-width: 100%; /* Responsive image */
+      height: auto; /* Maintain aspect ratio */
+      opacity: 0.8; /* Transparency */
+    }
+
+    .lead {
+      color: gray; /* Lead text color */
+      font-size: 15px; /* Font size */
+      font-weight: lighter; /* Font weight */
+    }
+  </style>
 </head>
 <body>
 
@@ -46,7 +80,7 @@
     <div class="container">
       <div class="row">
         <!-- Left Side: Text -->
-        <div class="col-md-12 col-lg-6 d-flex flex-column justify-content-center">
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-left">
           <h1 class="display-4">
             WE MAKE YOUR IDEA'S<br>
             <span class="reality">INTO REALITY</span>
@@ -60,16 +94,12 @@
           </div>
         </div>
         <!-- Right Side: Transparent Image -->
-        <div class="col-md-12 col-lg-6 text-center">
+        <div class="col-12 col-lg-6 text-center">
           <img src="./hero.png" alt="Transparent Image" class="img-fluid transparent-image">
         </div>
       </div>
     </div>
   </section>
-
-
-  
-  
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
