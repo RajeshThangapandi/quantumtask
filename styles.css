@@ -306,4 +306,41 @@ a.more {
   padding: 40px 0; /* Ensure padding remains for content spacing */
  /* Adjust to remove any visible gap between sections */
 }
+.feature-section {
+  background-color: white; /* Ensure background color is consistent */
+  padding: 40px 0;
+  margin-top: -20px;
+}
+/* Feature section animation on page load */
+.feature-section img,
+.feature-section .card-title,
+.feature-section .card-text {
+  opacity: 0;
+  transform: translateY(20px); /* Start from below */
+  animation: fadeInUp 0.5s forwards;
+}
 
+/* Apply animation with delays to create a cascading effect */
+.feature-section img {
+  animation-delay: 0.7s;
+}
+
+.feature-section .card-title {
+  animation-delay: 0.9s;
+}
+
+.feature-section .card-text {
+  animation-delay: 1.1s;
+}
+
+/* Reuse fadeInUp keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
