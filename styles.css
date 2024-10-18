@@ -4,105 +4,110 @@ body {
 }
 
 #main-navbar {
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+  background-color: transparent; /* Transparent background */
+  position: absolute; /* Absolute positioning for overlap */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Above other content */
 }
 
 .navbar .nav-link {
-  color: #591ed6;      /* Text color */
-  font-size: 1.2rem;  /* Increase font size */
+  color: #591ed6; /* Text color */
+  font-size: 1.2rem; /* Increase font size */
   margin-right: 30px; /* Increase gap between links */
 }
 
 .navbar-brand {
-  color: #591ed6;      /* Text color */
-  font-size: 1.5rem;  /* Increase brand font size */
+  color: #591ed6; /* Brand text color */
+  font-size: 1.5rem; /* Increase brand font size */
 }
 
-/* Ensure the navbar links change color when hovered */
+/* Hover Effects */
 .navbar .nav-link:hover {
-  color: #591ed6;
-  font-weight: bold;
+  color: #591ed6; /* Hover color */
+  font-weight: bold; /* Bold on hover */
 }
 
-/* Custom Button Styles */
+/* Button Styles */
 .get-started {
-  background-color: #591ed6; /* Solid background color for Get Started button */
-  color: white;              /* Text color */
+  background-color: #591ed6; /* Solid button color */
+  color: white; /* Button text color */
 }
 
 .contact-us {
-  background-color: transparent; /* Transparent background for Contact Us button */
-  color: #591ed6;                /* Text color */
-  border: 2px solid #591ed6;    /* Border color */
+  background-color: transparent; /* Transparent for Contact Us button */
+  color: #591ed6; /* Text color */
+  border: 2px solid #591ed6; /* Border color */
 }
 
-/* Additional hover effect (optional) */
+/* Hover effect for Contact Us button */
 .contact-us:hover {
   background-color: #591ed6; /* Background color on hover */
-  color: white;              /* Text color on hover */
+  color: white; /* Text color on hover */
 }
 
+/* Hero Section Styles */
 .hero {
-  background-color: white; /* Set the hero background color to white */
+  background-color: white; /* Hero background color */
   height: 100vh; /* Full height */
-  display: flex; /* Flexbox for layout */
-  align-items: center; /* Center vertically */
-  color: #591ed6;
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Vertically center content */
+  color: #591ed6; /* Text color */
 }
 
 /* Heading Styles */
 .hero h1 {
-  font-size: 3rem; /* Adjust the main heading size */
+  font-size: 3rem; /* Main heading size */
   margin-bottom: 0; /* Remove bottom margin */
 }
 
-/* Reality Text */
 .reality {
-  color: #f59173; /* Set color for INTO REALITY */
-  font-size: 2rem; 
-  margin-bottom: 20px; /* Decrease font size for INTO REALITY */
+  color: #f59173; /* Reality text color */
+  font-size: 2rem; /* Font size */
+  margin-bottom: 20px; /* Bottom margin */
 }
 
-/* Right Side: Transparent Image */
+/* Image Styles */
 .transparent-image {
   max-width: 100%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
-  opacity: 0.8; /* Adjust transparency */
+  opacity: 0.8; /* Transparency */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem; /* Smaller heading for smaller screens */
+    font-size: 2.5rem; /* Smaller heading */
   }
   
   .reality {
-    font-size: 1.5rem; /* Smaller font size for INTO REALITY on smaller screens */
+    font-size: 1.5rem; /* Smaller reality text */
   }
 
   .hero p {
     font-size: 1rem; /* Smaller paragraph text */
   }
+
+  /* Increase margin-top for hero content in mobile view */
+  .hero .col-md-12 {
+    margin-top: 50px; /* Adjust this value as needed */
+  }
 }
 
 .lead {
-  color: gray;
-  font-size: 15px;
-  font-weight: lighter;
+  color: gray; /* Lead text color */
+  font-size: 15px; /* Font size */
+  font-weight: lighter; /* Font weight */
 }
 
 /* Mobile Navigation Styles */
-@media (max-width: 767px) { /* Apply styles only for mobile devices */
+@media (max-width: 767px) {
   .navbar-toggler {
-    background-color: transparent; /* Set background to transparent */
+    background-color: transparent; /* Transparent background */
     border: none; /* Remove border */
   }
 
-  /* Change the color of the hamburger lines */
+  /* Custom Hamburger Icon */
   .navbar-toggler .navbar-toggler-icon {
     background-image: none; /* Remove default icon */
   }
@@ -117,27 +122,33 @@ body {
     margin: 5px auto; /* Centering the dashes */
   }
 
-  /* When the mobile menu is open */
+  /* Mobile Menu Styles */
   .navbar-collapse {
     background-color: #591ed6; /* Mobile nav background color */
   }
 
- 
-  /* Text color for the navbar links */
+  /* Nav link styles for mobile */
   .navbar .nav-link {
-    color: white;
-    padding: 15px;
-    margin-left: 30px; /* Change nav link text color to white */
+    color: white; /* Change nav link text color to white */
+    padding: 15px; /* Add padding */
+    margin-left: 30px; /* Space between links */
   }
 
-  /* Ensure the text color changes on hover */
+  /* Hover color for mobile nav links */
   .navbar .nav-link:hover {
-    color: #f59173; /* Change hover color if desired */
+    color: #f59173; /* Change hover color */
   }
 
-  /* Brand color */
+  /* Brand color for mobile */
   .navbar-brand {
-    color: #591ed6; /* Change brand text color to white */
+    color: white; /* Change brand text color to white */
   }
 }
 
+/* Tablet View (768px and above) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Add margin-top for tablet view */
+  .hero .col-md-12 {
+    margin-top: 60px; /* Adjust this value as needed */
+  }
+}
