@@ -352,3 +352,38 @@ a.more {
 .product-t {
   color:black !important;
 }
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px; /* Unified size */
+	height: 10px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+
+.carousel-indicators li {
+  background-color: gray !important;  /* Gray dots for inactive indicators */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: black;  /* Black dot for active indicator */
+}
+
+.carousel .carousel-indicators {
+	margin-top: 40px; /* Original spacing above */
+	position: absolute;
+	bottom: -30px; /* Push indicators down */
+}
+
+.name-element {
+	position: relative;
+	margin-bottom: 90px; /* Add space for indicators if "name" is directly above */
+}
+
+.role{
+  color:gray;
+ padding-left: 4px;
+  font-style: normal;
+}
