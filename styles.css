@@ -298,19 +298,12 @@ a.more {
   }
 }
 
-
+.feature-title{
+  color: black !important; 
+}
 .feature-section {
-  background-color: #f8f9fa; /* Light background for the section */
-  padding: 40px 0; /* Padding for the section */
-  margin-top: -20px; /* Adjust this value to pull the feature section closer to the hero section */
+  background-color: white; /* Match the hero section's background color */
+  padding: 40px 0; /* Ensure padding remains for content spacing */
+ /* Adjust to remove any visible gap between sections */
 }
 
-.feature-section .card {
-  border: none; /* Remove default card border */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
-
-.feature-section .card-title {
-  font-weight: bold; /* Bold title */
-  color: #591ed6; /* Custom color for the title */
-}
