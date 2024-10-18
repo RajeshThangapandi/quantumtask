@@ -53,7 +53,7 @@ body {
   display: flex; /* Flexbox layout */
   align-items: center; /* Vertically center content */
   color: #591ed6; /* Text color */
-  padding-top: 60px; /* Add padding to prevent overlap with navbar */
+  padding-top: 60px; /* Add default padding to prevent overlap with navbar */
 }
 
 /* Heading Styles */
@@ -76,15 +76,15 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (min-width: 340px) and (max-width: 1024px) {
   .hero {
-    padding-top: 100px; /* Additional padding for mobile view */
+    padding-top: 150px; /* Additional padding for mobile and tablet view */
   }
 
   .hero h1 {
     font-size: 2.5rem; /* Smaller heading */
   }
-  
+
   .reality {
     font-size: 1.5rem; /* Smaller reality text */
   }
@@ -146,15 +146,13 @@ body {
 
   /* Brand color for mobile */
   .navbar-brand {
-    color:#591ed6 ; /* Change brand text color to white */
+    color: white; /* Change brand text color to white */
   }
 }
 
 /* Tablet View (768px and above) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero {
-    padding-top: 100px; /* Adjust padding for tablet view */
+    padding-top: 80px; /* Adjust padding for tablet view */
   }
-
-  /* Additional adjustments if necessary */
 }
