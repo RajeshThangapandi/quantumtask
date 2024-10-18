@@ -1,0 +1,143 @@
+/* Custom CSS for Hero Section */
+body {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+#main-navbar {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .nav-link {
+  color: #591ed6;      /* Text color */
+  font-size: 1.2rem;  /* Increase font size */
+  margin-right: 30px; /* Increase gap between links */
+}
+
+.navbar-brand {
+  color: #591ed6;      /* Text color */
+  font-size: 1.5rem;  /* Increase brand font size */
+}
+
+/* Ensure the navbar links change color when hovered */
+.navbar .nav-link:hover {
+  color: #591ed6;
+  font-weight: bold;
+}
+
+/* Custom Button Styles */
+.get-started {
+  background-color: #591ed6; /* Solid background color for Get Started button */
+  color: white;              /* Text color */
+}
+
+.contact-us {
+  background-color: transparent; /* Transparent background for Contact Us button */
+  color: #591ed6;                /* Text color */
+  border: 2px solid #591ed6;    /* Border color */
+}
+
+/* Additional hover effect (optional) */
+.contact-us:hover {
+  background-color: #591ed6; /* Background color on hover */
+  color: white;              /* Text color on hover */
+}
+
+.hero {
+  background-color: white; /* Set the hero background color to white */
+  height: 100vh; /* Full height */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center vertically */
+  color: #591ed6;
+}
+
+/* Heading Styles */
+.hero h1 {
+  font-size: 3rem; /* Adjust the main heading size */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Reality Text */
+.reality {
+  color: #f59173; /* Set color for INTO REALITY */
+  font-size: 2rem; 
+  margin-bottom: 20px; /* Decrease font size for INTO REALITY */
+}
+
+/* Right Side: Transparent Image */
+.transparent-image {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0.8; /* Adjust transparency */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem; /* Smaller heading for smaller screens */
+  }
+  
+  .reality {
+    font-size: 1.5rem; /* Smaller font size for INTO REALITY on smaller screens */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Smaller paragraph text */
+  }
+}
+
+.lead {
+  color: gray;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 767px) { /* Apply styles only for mobile devices */
+  .navbar-toggler {
+    background-color: transparent; /* Set background to transparent */
+    border: none; /* Remove border */
+  }
+
+  /* Change the color of the hamburger lines */
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: none; /* Remove default icon */
+  }
+
+  .navbar-toggler::before,
+  .navbar-toggler::after {
+    content: ''; /* Required for pseudo-elements */
+    display: block;
+    width: 30px; /* Width of the dashes */
+    height: 3px; /* Height of the dashes */
+    background-color: #591ed6; /* Color of the dashes */
+    margin: 5px auto; /* Centering the dashes */
+  }
+
+  /* When the mobile menu is open */
+  .navbar-collapse {
+    background-color: #591ed6; /* Mobile nav background color */
+  }
+
+ 
+  /* Text color for the navbar links */
+  .navbar .nav-link {
+    color: white;
+    padding: 15px;
+    margin-left: 30px; /* Change nav link text color to white */
+  }
+
+  /* Ensure the text color changes on hover */
+  .navbar .nav-link:hover {
+    color: #f59173; /* Change hover color if desired */
+  }
+
+  /* Brand color */
+  .navbar-brand {
+    color: #591ed6; /* Change brand text color to white */
+  }
+}
+
