@@ -8,6 +8,7 @@
 
   <meta name="description" content="" />
   <meta name="keywords" content="bootstrap, bootstrap4" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,6 +16,7 @@
   <link href="css/tiny-slider.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co</title>
+
 </head>
 
 <body>
@@ -66,53 +68,54 @@
 
 <!-- Start Feature Section -->
 <!-- Start Feature Section -->
+<!-- Start Feature Section -->
 <section class="feature-section">
   <div class="container">
     <h2 class="text-center mb-4 feature-title">Features</h2>
     
     <!-- First Feature -->
-    <div class="row align-items-center mb-5">
+    <div class="row align-items-center mb-5" data-aos="fade-up">
       <div class="col-md-6">
         <img src="hero2.png" alt="Feature Image 1" class="img-fluid rounded">
       </div>
       <div class="col-md-6">
         <div>
           <h5 class="feature-title">Card Title</h5>
-          <p class="mb-4">Some qucik exampel etxt ot budli ohnet dcar title and mkae pu het bkul of het cards' content.</p>
+          <p class="mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     </div>
 
     <!-- Second Feature -->
-    <div class="row align-items-center mb-5">
+    <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="200"> <!-- Add delay for stagger effect -->
       <div class="col-md-6 order-md-2"> <!-- Swap image and text order for alternating layout -->
         <img src="hero3.png" alt="Feature Image 2" class="img-fluid rounded">
       </div>
       <div class="col-md-6 order-md-1">
         <div>
-         
-
-          <h5 class="feature-title"> Card Title</h5>
-          <p class="mb-4">Some qucik exampel etxt ot budli ohnet dcar title and mkae pu het bkul of het cards' content.</p>
+          <h5 class="feature-title">Card Title</h5>
+          <p class="mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     </div>
 
     <!-- Third Feature -->
-    <div class="row align-items-center">
+    <div class="row align-items-center" data-aos="fade-up" data-aos-delay="400"> <!-- Add delay for stagger effect -->
       <div class="col-md-6">
         <img src="hero4.png" alt="Feature Image 3" class="img-fluid rounded">
       </div>
       <div class="col-md-6">
         <div>
-          <h5 class="feature-title"> Card Title</h5>
-          <p class="mb-4">Some qucik exampel etxt ot budli ohnet dcar title and mkae pu het bkul of het cards' content.</p>
+          <h5 class="feature-title">Card Title</h5>
+          <p class="mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     </div>
 
   </div>
 </section>
+<!-- End Feature Section -->
+
 <!-- End Feature Section -->
 
 <!-- Start Product Section -->
@@ -123,34 +126,34 @@
     <div class="row">
       
       <!-- First Product Card -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-up">
         <div class="card">
           <img src="product3.png" class="card-img-top" alt="Product 1 Image">
           <div class="card-body">
             <h5 class="card-title product-t">Product 1</h5>
-            <p class="card-text product-t">A short description of Product 1. Highlight its key features or unique selling points.</p>
+            <p class="mb-4">A short description of Product 1. Highlight its key features or unique selling points.</p>
           </div>
         </div>
       </div>
 
       <!-- Second Product Card -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
         <div class="card">
           <img src="product2.png" class="card-img-top" alt="Product 2 Image">
           <div class="card-body">
             <h5 class="card-title product-t">Product 2</h5>
-            <p class="card-text product-t">A short description of Product 2. Highlight its key features or unique selling points.</p>
+            <p class="mb-4">A short description of Product 2. Highlight its key features or unique selling points.</p>
           </div>
         </div>
       </div>
 
       <!-- Third Product Card -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
         <div class="card">
           <img src="product4.png" class="card-img-top" alt="Product 3 Image">
           <div class="card-body">
             <h5 class="card-title product-t">Product 3</h5>
-            <p class="card-text product-t">A short description of Product 3. Highlight its key features or unique selling points.</p>
+            <p class="mb-4">A short description of Product 3. Highlight its key features or unique selling points.</p>
           </div>
         </div>
       </div>
@@ -158,9 +161,94 @@
     </div>
   </div>
 </section>
-<!-- End Product Section -->
 
-<!-- End Product Section -->
+<!-- Start Testimonials Section -->
+<section class="testimonials-section py-5" style="background-color: white;">
+  <div class="container">
+    <h2 class="text-center product-title">Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide mx-auto" style="max-width: 1000px; width: 100%;" data-bs-ride="carousel">
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+              <div class="avatar">
+                <img src="user1.png" alt="User 1" class="rounded-circle" style="width: 100px; height: 100px;">
+              </div>
+              <p class="mb-4">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor
+                egestas. </p>
+              <h5>- John Doe</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+              <div class="avatar">
+                <img src="user2.1.png" alt="User 2" class="rounded-circle" style="width: 100px; height: 100px;">
+              </div>
+              <p class="mb-4">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor
+                egestas. </p>
+              <h5>- Jane Smith</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+              <div class="avatar">
+                <img src="user3.png" alt="User 3" class="rounded-circle" style="width: 100px; height: 100px;">
+              </div>
+              <p class="mb-4">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor
+                egestas.</p>
+              <h5>- Sarah Lee</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="border: none; background: none;">
+          <i class="fas fa-chevron-left" style="color: #808080; font-size: 30px;"></i> <!-- Increased font size -->
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="border: none; background: none;">
+          <i class="fas fa-chevron-right" style="color: #808080; font-size: 30px;"></i> <!-- Increased font size -->
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!-- Dots below the testimonials -->
+    <div class="text-center mt-3">
+      <div class="carousel-indicators" style="justify-content: center;">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" style="background-color: black; border-radius: 50%; width: 10px; height: 10px; border: none;"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: gray; border-radius: 50%; width: 10px; height: 10px; border: none;"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: gray; border-radius: 50%; width: 10px; height: 10px; border: none;"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End Testimonials Section -->
+
+<!-- Include Font Awesome for the arrows -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/tiny-slider.js"></script>
@@ -177,5 +265,14 @@
       });
     });
   </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // Animation duration (ms)
+    once: true, // Whether the animation should happen only once while scrolling
+  });
+</script>
+
 </body>
 </html>
