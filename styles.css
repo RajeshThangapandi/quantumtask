@@ -344,3 +344,11 @@ a.more {
     transform: translateY(0); /* End at original position */
   }
 }
+
+.product-title{
+  color:black !important;
+}
+
+.product-t {
+  color:black !important;
+}
