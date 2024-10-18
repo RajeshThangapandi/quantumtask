@@ -42,8 +42,8 @@ a.more {
 
 .custom-navbar .navbar-brand {
   color: #591ed6;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 20px;
+ 
 }
 
 .custom-navbar .navbar-toggler {
@@ -59,7 +59,7 @@ a.more {
 
 .custom-navbar .custom-navbar-nav li a {
   font-size: 20px;
-  font-weight: 500;
+  
   color: #591ed6 !important;
   transition: .3s all ease;
   position: relative;
