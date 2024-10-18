@@ -128,13 +128,13 @@ a.more {
 
 @media (min-width: 576px) and (max-width: 768px) { /* Small devices (tablets, 576px - 768px) */
   .hero .hero-img-wrap img {
-    width: 70%; /* Set width to 70% */
+    width: 100%; /* Set width to 70% */
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) { /* Medium devices (desktops, 768px - 992px) */
   .hero .hero-img-wrap img {
-    width: 60%; /* Set width to 60% */
+    width: 100%; /* Set width to 60% */
   }
 }
 
@@ -198,3 +198,31 @@ a.more {
 .mb-4 {
   color: gray !important;
 }
+
+.navbar-toggler {
+  border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+  width: 30px; /* Set width for the toggle icon */
+  height: 30px; /* Set height for the toggle icon */
+  position: relative; /* Set position for absolute positioning of lines */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+  content: ''; /* Create empty content for lines */
+  display: block; /* Make the lines block elements */
+  width: 100%; /* Set width to 100% of the icon */
+  height: 4px; /* Set height for the lines */
+  background-color: #591ed6; /* Set the color for the lines */
+  margin: 4px 0; /* Add some space between the lines */
+}
+
+@media (max-width: 576px) { /* Extra small devices (phones, <576px) */
+  .navbar-toggler {
+    border-color: transparent; /* Ensure no border on the toggle button */
+  }
+}
+
